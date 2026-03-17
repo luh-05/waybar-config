@@ -1,26 +1,33 @@
 
 # Hyprland Waybar Config
 
-Minimal, modular Waybar configuration designed for **Hyprland on Arch Linux**.  
+Minimal, modular Waybar configuration designed for Hyprland on Arch Linux.
 
 ![Preview](assets/waybar.png)
 
-## Installation  
+## Includes
 
-Clone the repository:  
+* Waybar configuration (modular layout + styling)
+* Custom Waybar modules and scripts
+* Rofi configuration (launcher, system, network, VPN menus)
+* JetBrains Mono Nerd Font styling
+
+## Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/benny-e/waybar-config.git
-cd waybar-config
+cd YOUR_REPO
 ```
 
-Make the installer executable:  
+Make the installer executable:
 
 ```bash
 chmod +x install.sh
 ```
 
-Run the install script:  
+Run the install script:
 
 ```bash
 ./install.sh
@@ -28,13 +35,13 @@ Run the install script:
 
 ## Notes
 
-* Designed for Arch Linux  
-* Intended for use with Hyprland  
-* The install script will:  
+* Designed for Arch Linux
+* Intended for use with Hyprland 
+* The install script will:
 
-  * Install required dependencies 
-  * Backup existing configs  
-  * Copy Waybar and Rofi configs to `~/.config`  
+  * Install required dependencies  
+  * Backup existing configs   
+  * Copy Waybar and Rofi configs to `~/.config`
 
 ---
 
