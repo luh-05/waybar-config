@@ -6,17 +6,17 @@ Waybar configs designed for hyprland
 
 ## features  
 Custom rofi menus for:  
-Bluetooth  
 VPN  
-Volume  
 Network  
-Launcher/powermenu 
+Launcher/powermenu  
+system info  
 
 ## Requirements
 waybar  
 nerd fonts (I use JetBrainsMono Nerd Font)  
-Network Manager  
-Bluetoothctl
+Network Manager   
+Bluetoothctl  
+blueman  
 
 This is configured for hyprland, but will work with other WM with some edits  
 I use kitty/brave/thunar which can be changed  
