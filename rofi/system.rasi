@@ -2,6 +2,7 @@ configuration {
   show-icons: false;
   sidebar-mode: false;
   drun-display-format: "{name}";
+  hover-select: true;
 }
 
 * {
