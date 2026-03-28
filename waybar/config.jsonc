@@ -41,10 +41,9 @@
 		"hyprland/window"
 	],
 	"modules-right": [
-		"custom/leftend",
-		"idle_inhibitor",
 		"tray",
 		"custom/updates",
+		"idle_inhibitor",
 		"custom/spacer",
 		"pulseaudio",
 		"custom/spacer",
@@ -61,7 +60,6 @@
 		"temperature",
 		"custom/spacer",
 		"battery",
-		"custom/rightend",
 		"clock"
 	]
 }
