@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-THEME="$HOME/.config/rofi/vpn.rasi"
+THEME="$HOME/.config/waybar/rofi/vpn.rasi"
 
 notify() {
   command -v notify-send >/dev/null 2>&1 || return 0

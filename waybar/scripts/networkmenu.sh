@@ -3,7 +3,7 @@ set -euo pipefail
 
 #Requires: NetworkManager and rofi
 
-ROFI_THEME="$HOME/.config/rofi/networkmenu.rasi" 
+ROFI_THEME="$HOME/.config/waybar/rofi/networkmenu.rasi" 
 ROFI_CMD=(rofi -dmenu -i -markup-rows -no-custom -hover-select -theme-str 'inputbar {enabled: false; }')
 ROFI_PASS_CMD=(rofi -dmenu -password -no-custom i -hover-select \
   -p "" \

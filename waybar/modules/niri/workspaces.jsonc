@@ -1,0 +1,13 @@
+{
+	"niri/workspaces": {
+		"format": "{icon} ",
+    "format-icons": {
+      // Named workspaces
+      "music": "󰎇",
+      "chat": "<b></b>",
+      // Icons by state
+      "active": "",
+      "default": ""
+    }
+	}
+}

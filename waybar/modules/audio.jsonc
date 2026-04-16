@@ -12,7 +12,7 @@
       "portable": "",
       "default": ["󰕿","󰖀",""] 
     },
-    "on-click": "pavucontrol",
+    "on-click": "pwvucontrol",
     "tooltip-format": "<b>Output Device</b>: {desc}"
   }
 }

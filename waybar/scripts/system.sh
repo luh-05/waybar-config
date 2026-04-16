@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-THEME="$HOME/.config/rofi/system.rasi"
+THEME="$HOME/.config/waybar/rofi/system.rasi"
 
-host="$(hostnamectl --static 2>/dev/null || hostname)"
+host="$(hostnamectl --static 2>/dev/null || hostname) ($(cat /etc/nixos-hostname))"
 kernel="$(uname -r)"
-uptime_pretty="$(uptime -p 2>/dev/null | sed 's/^up //')"
+uptime_pretty="$(uptime | rg "..:..:.." -o --color=never)"
 
 cpu="$(lscpu 2>/dev/null | awk -F: '/Model name/ {gsub(/^[ \t]+/, "", $2); print $2; exit}')"
 cpu="${cpu:-Unknown}"
@@ -22,7 +22,8 @@ fi
 ip_addr="${ip_addr:-N/A}"
 
 shell_name="$(basename "$SHELL")"
-pkg_count="$(pacman -Qq 2>/dev/null | wc -l || echo "N/A")"
+# pkg_count="$(nix eval .#nixosConfigurations.default.config.environment.systemPackages --json --impure | jq length)"
+pkg_count="$(cat /etc/package-count)"
 
 FG_MAIN="#FFFFFF"
 FG_MUTED="#9AA0AA"

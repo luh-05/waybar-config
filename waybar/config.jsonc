@@ -1,48 +1,38 @@
 {
 	"include": [
-		"~/.config/waybar/modules/hypr/window.jsonc",
-		"~/.config/waybar/modules/hypr/workspaces.jsonc",
-		"~/.config/waybar/modules/custom/arch.jsonc",
-		"~/.config/waybar/modules/custom/browser.jsonc",
-		"~/.config/waybar/modules/custom/fileman.jsonc",
-		"~/.config/waybar/modules/custom/terminal.jsonc",
-		"~/.config/waybar/modules/custom/virtmanager.jsonc",
-		"~/.config/waybar/modules/custom/nvim.jsonc",
-		"~/.config/waybar/modules/custom/nowplaying.jsonc",
-		"~/.config/waybar/modules/custom/updates.jsonc",
-		"~/.config/waybar/modules/custom/launcher.jsonc",
-		"~/.config/waybar/modules/custom/spacers.jsonc",
-		"~/.config/waybar/modules/custom/system.jsonc",
-		"~/.config/waybar/modules/bluetooth.jsonc",
-		"~/.config/waybar/modules/custom/vpn.jsonc",
-		"~/.config/waybar/modules/pulseaudio.jsonc",
-		"~/.config/waybar/modules/backlight.jsonc",
-		"~/.config/waybar/modules/battery.jsonc",
-		"~/.config/waybar/modules/clock.jsonc",
-		"~/.config/waybar/modules/cpu.jsonc",
-		"~/.config/waybar/modules/idle_inhibitor.jsonc",
-		"~/.config/waybar/modules/memory.jsonc",
-		"~/.config/waybar/modules/network.jsonc",
-		"~/.config/waybar/modules/temperature.jsonc",
-		"~/.config/waybar/modules/tray.jsonc"
+		// "./modules/custom/nvim.jsonc",
+		// "./modules/custom/updates.jsonc",
+		// "./modules/custom/launcher.jsonc",
+		// "./modules/custom/system.jsonc",
+		// "./modules/backlight.jsonc",
+		// "./modules/battery.jsonc",
+		// "./modules/tray.jsonc"
+		"./waybar/modules/niri/workspaces.jsonc",
+		"./waybar/modules/custom/virtmanager.jsonc",
+		"./waybar/modules/custom/nowplaying.jsonc",
+		"./waybar/modules/custom/spacers.jsonc",
+		"./waybar/modules/custom/system.jsonc",
+		"./waybar/modules/bluetooth.jsonc",
+		"./waybar/modules/custom/vpn.jsonc",
+		"./waybar/modules/pulseaudio.jsonc",
+		"./waybar/modules/clock.jsonc",
+		"./waybar/modules/cpu.jsonc",
+		"./waybar/modules/idle_inhibitor.jsonc",
+		"./waybar/modules/memory.jsonc",
+		"./waybar/modules/network.jsonc",
+		"./waybar/modules/temperature.jsonc"
 	],
 	"position": "top",
 	"modules-left": [
 		"custom/system",
-		"hyprland/workspaces",
-		"custom/launcher",
-		"custom/browser",
-		"custom/fileman",
-		"custom/terminal",
+		"niri/workspaces",
 		"custom/virtmanager",
 		"custom/nowplaying"
 	],
 	"modules-center": [
-		"hyprland/window"
+		"niri/window"
 	],
 	"modules-right": [
-		"tray",
-		"custom/updates",
 		"idle_inhibitor",
 		"custom/spacer",
 		"pulseaudio",
@@ -58,8 +48,8 @@
 		"cpu",
 		"custom/spacer",
 		"temperature",
-		"custom/spacer",
-		"battery",
+		// "custom/spacer",
+		// "battery",
 		"clock"
 	]
 }
